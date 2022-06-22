@@ -17,5 +17,8 @@ export default defineConfig({
       targets: ['defaults', 'last 2 versions', '> 0.1%'],
       additionalLegacyPolyfills: ['regenerator-runtime/runtime']
     })
-  ]
+  ],
+  build: {
+    minify: false
+  }
 })
