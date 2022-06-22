@@ -1,4 +1,4 @@
-import 'normalize.css/normalize.css'
+import 'modern-css-reset/dist/reset.min.css'
 import '@/assets/index.scss'
 import '@/assets/index.ts'
 // const app = document.querySelector<HTMLDivElement>('#app')!

@@ -1,0 +1,79 @@
+.flex {
+  display: flex;
+}
+.f-c {
+  display: flex;
+  justify-content: center;
+}
+.f-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-ccc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-button {
+  margin: 0 auto;
+  padding: 0;
+  border: none; //去除边框
+  outline: none; //消除默认点击蓝色边框效果
+  // width: 140px;
+  height: 40px;
+  background-image: linear-gradient(0deg, #ff6d25 0%, #ffb401 100%), linear-gradient(#ffffff, #ffffff);
+  background-blend-mode: normal, normal;
+  border-radius: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  &:active {
+    background-image: linear-gradient(90deg, #ff7200 0%, #ff7200 100%), linear-gradient(-34deg, #233975 0%, #2d4891 100%);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .gt {
+    display: inline-block;
+    margin-left: 9px;
+  }
+}
+
+// 基础输入框样式
+@mixin base-input {
+  font-size: 14px;
+  height: 100%;
+  width: 90%;
+  box-sizing: border-box;
+  box-shadow: none; /*去除阴影*/
+  outline: none; /*聚焦input的蓝色边框*/
+  resize: none; /*textarea 禁止拖拽*/
+  border: none; /*去除边框*/
+  appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*点击高亮的颜色*/
+  padding-left: 10px;
+  &::placeholder {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #999999;
+  }
+}
+
+.search-input {
+  @include base-input;
+  width: 519px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: solid 1px #ff7123;
+}
+.base-red,
+.b-red {
+  color: #f2543d;
+}

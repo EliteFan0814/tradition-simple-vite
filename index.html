@@ -6,16 +6,372 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
+  <link rel="stylesheet" href="/swiper-bundle-7.4.1.min.css">
+  <script src="/swiper-bundle-7.4.1.min.js"></script>
 </head>
 
 <body>
-  <div id="app"></div>
-  <div class="fpc-wrap">
-    <img src="/imgs/h1.png" alt="">
-    <h3>测用</h3>
-    <p>哈哈哈</p>
-  </div>
+  <main id="fpc-app">
+    <!-- 查询 -->
+    <section class="fpc-search">
+      <article class="title">
+      </article>
+      <ul role="list" class="tabs f-cc">
+        <li class="tab active" data-value="0">免费商标查询</li>
+        <li class="tab" data-value="1">59分钟极速注册</li>
+      </ul>
+      <article class="search-form">
+        <div class="search-content f-ccc search-active">
+          <div class="search-wrap flex">
+            <input class="search-input page-logo-value" placeholder="请输入商标名称" type="text">
+            <button class="base-button search-btn dialog-btn" data-title="登录" data-submit="登录"
+              data-show="[1,1]">立即获得结果</button>
+          </div>
+          <div class="s-c-wrap">
+            <div class="sub-title">查询结果抢先看——以<span class="b-red">“芈月”</span>为例<span class="sub">（当前注册情况）</span></div>
+            <div class="key-form-wrap">
+              <div class="key-form-head f-c">
+                <span class="key-item key-0">注册号/申请号</span>
+                <span class="key-item key-1">类别</span>
+                <span class="key-item key-1">商标</span>
+                <span class="key-item key-1">状态</span>
+              </div>
+              <div class="swiper-search">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="key-form-item f-c">
+                      <span class="key-item key-0">15215045469</span>
+                      <span class="key-item key-1">35</span>
+                      <span class="key-item key-1">芈月</span>
+                      <span class="key-item key-1">已无效</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="key-form-item f-c">
+                      <span class="key-item key-0">15215045469</span>
+                      <span class="key-item key-1">1</span>
+                      <span class="key-item key-1">芈月</span>
+                      <span class="key-item key-1">申请中</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="key-form-item f-c">
+                      <span class="key-item key-0">15215045469</span>
+                      <span class="key-item key-1">25</span>
+                      <span class="key-item key-1">芈月</span>
+                      <span class="key-item key-1">已注册</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="end-sub">
+            温馨提示：为保证你的申请通过率，注册前务必<a class="end-sub-a  dialog-btn" data-title="登录" data-submit="登录"
+              data-show="[1,1]">查询商标能否注册</a>和咨询专业顾问
+          </div>
+        </div>
+        <div class="search-content f-ccc ">
+          <div class="search-wrap flex">
+            <input class="search-input search-phone page-phone-value" maxlength="11" placeholder="请输入手机号码（已加密）"
+              type="text">
+            <input class="search-input search-name page-name-value" placeholder="姓名或称呼（已加密）" type="text">
+            <button class="base-button search-btn dialog-btn" data-transphone="true" data-title="登录" data-submit="登录"
+              data-show="[1,1]">申请极速注册</button>
+          </div>
+          <div class="s-c-wrap1 f-cc">
+            <div class="people-sts">
+              <div class="sts-title">目前已有<span class="b-red">23242人</span>拿到商标注册官方回执，如下：</div>
+              <div class="sts-form">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="sts-row f-cc">
+                      <span>156****072用户</span>
+                      <span>历时50分钟拿到官方回执</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sts-row f-cc">
+                      <span>156****072用户</span>
+                      <span>历时50分钟拿到官方回执</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sts-row f-cc">
+                      <span>156****072用户</span>
+                      <span>历时50分钟拿到官方回执</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="people-img">
+              <div class="sts-title">商标局回执（样式参考）</div>
+              <img src="/imgs/key-img.png" alt="">
+            </div>
+          </div>
+          <div class="end-sub">
+            温馨提示：为保证你的申请通过率，注册前务必<a class="end-sub-a dialog-btn" data-title="登录" data-submit="登录"
+              data-show="[1,1]">查询商标能否注册</a>和咨询专业顾问
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- 3种方案 -->
+    <section class="three-wrap f-ccc">
+      <div class="section-title"><img src="/imgs/title0.png" alt=""></div>
+      <div class="three-list f-c">
+        <div class="three-item">
+          <div class="three-num">01</div>
+          <div class="three-title">商标普通注册</div>
+          <div class="three-c">专属顾问、专业评估，根据需求<br>
+            <span class="three-o">量身制定</span>商标普通注册
+          </div>
+          <img src="/imgs/three0.png" class="three-icon" alt="">
+          <div class="btn-wrap">
+            <button class="base-button dialog-btn" data-transphone="false" data-title="登录" data-submit="登录"
+              data-show="[1,1]">立即办理<img class="gt" src="/imgs/gt.png" alt=""></button>
+          </div>
+        </div>
+        <div class="three-item">
+          <div class="three-num">02</div>
+          <div class="three-title">商标极速注册</div>
+          <div class="three-c"><span class="three-o">59分钟内</span>即可报件，并反馈官方<br>
+            回执
+          </div>
+          <img src="/imgs/three1.png" class="three-icon" alt="">
+          <div class="btn-wrap">
+            <button class="base-button dialog-btn" data-transphone="false" data-title="登录" data-submit="登录"
+              data-show="[1,1]">立即办理<img class="gt" src="/imgs/gt.png" alt=""></button>
+          </div>
+        </div>
+        <div class="three-item">
+          <div class="three-num">03</div>
+          <div class="three-title">极速双保注册</div>
+          <div class="three-c"><span class="three-o">有速度有保障</span>，不成功免费再<br>
+            注册一次
+          </div>
+          <img src="/imgs/three2.png" class="three-icon" alt="">
+          <div class="btn-wrap">
+            <button class="base-button dialog-btn" data-transphone="false" data-title="登录" data-submit="登录"
+              data-show="[1,1]">立即办理<img class="gt" src="/imgs/gt.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 5大服务 -->
+    <section class="five-wrap f-ccc">
+      <div class="section-title"><img src="/imgs/title1.png" alt=""></div>
+      <div class="five-content f-cc">
+        <div class="five-list f-ccc">
+          <div class="five-item f-cc"><img src="/imgs/chaxun.png" alt=""><span class="five-o">免费查询</span>商标情况，快速反馈查询结果
+          </div>
+          <div class="five-item f-cc"><img src="/imgs/search.png" alt=""><span class="five-o">双重检索</span>商标状态严格把关，降低注册风险
+          </div>
+          <div class="five-item f-cc"><img src="/imgs/trend.png" alt=""><span class="five-o">多种商标</span>解决方案，大力提高注册成功率
+          </div>
+          <div class="five-item f-cc"><img src="/imgs/people.png" alt=""><span class="five-o">专属顾问</span>一对一，随时在线及时响应
+          </div>
+        </div>
+        <img src="/imgs/triangle.png" class="five-triangle" alt="">
+        <div class="five-r f-ccc">
+          <img src="/imgs/free.png" alt="">
+          <button class="base-button search-logo dialog-btn" data-transphone="false" data-title="登录" data-submit="登录"
+            data-show="[1,1]">我要查询商标<img class="gt" src="/imgs/gt.png" alt=""></button>
+          <button class="base-button search-analyse">获取免费商标分析函<img class="gt" src="/imgs/gt.png" alt=""></button>
+        </div>
+      </div>
+      <div class="five-content2 f-cc">
+        <div class="five-2-list">
+          <!-- 防抢注 -->
+          <div class="five-2-item five-first">
+            <div class="five-2-title">防抢注</div>
+            <div class="five-2-content">商标极速注册，59分钟报送，<br>
+              商标局抢先拿证，防止抢注。</div>
+            <div class="five-2-go f-cc"><a href="">什么是极速注册？</a><img src="/imgs/in.png" alt="">
+            </div>
+          </div>
+          <!-- 高效可靠 -->
+          <div class="five-2-item">
+            <div class="five-2-title">高效可靠</div>
+            <div class="five-2-content">隔日拿到商标注册号，及时反馈<br>
+              报送回执。</div>
+            <div class="five-2-go f-cc"><a href="">什么是商标回执？</a><img src="/imgs/in.png" alt=""></div>
+          </div>
+        </div>
+        <div class="five-2-list">
+          <div class="five-first">
+            <img src="/imgs/five-bg21.png" alt="">
+          </div>
+          <!-- 高通过率 -->
+          <div class="five-2-item">
+            <div class="five-2-title">高通过率</div>
+            <div class="five-2-content">专业审查，提前查重，提高商标<br>
+              通过率。</div>
+            <div class="five-2-go f-cc"><a href="">受理通知怎么反馈？</a><img src="/imgs/in.png" alt=""></div>
+          </div>
+        </div>
+        <img src="/imgs/five-people.png" class="blackboard" alt="">
+      </div>
+      <div class="five-content3 f-cc">
+        <div class="flow-item">
+          <div class="flow-title">流程节点透明<br>状态及时追踪</div>
+          <div class="flow-content">采用短信、微信、QQ<br>等方式及时通知客户。</div>
+          <div class="flow-go f-cc"><a href="">我想了解流程问题</a><img src="/imgs/in.png" alt="">
+          </div>
+        </div>
+        <div class="flow-item flow-item1">
+          <div class="flow-title">动态随时监测<br>异常及时通知</div>
+          <div class="flow-content">官方数据及时更新，随<br>时监测商标状态。</div>
+          <div class="flow-go f-cc"><a href="">我想了解流程问题</a><img src="/imgs/in.png" alt="">
+          </div>
+        </div>
+        <div class="flow-item flow-item2">
+          <div class="flow-title">证书下发通知<br>顺丰邮寄保障</div>
+          <div class="flow-content">受理通知书、商标注册<br>证下达，专属顾问及时<br>通知，顺丰免费邮寄。</div>
+          <div class="flow-go f-cc"><a href="">我想了解流程问题</a><img src="/imgs/in.png" alt="">
+          </div>
+        </div>
+        <img src="/imgs/flow.png" alt="">
+      </div>
+      <div class="five-content4">
+        <div>
+          <img src="/imgs/express.png" alt="">
+        </div>
+        <div class="mail-text">开局国家正规发票；受理通知书、<br>
+          商标注册证等重要文件免费顺丰<br>
+          邮寄到家</div>
+      </div>
+      <div class="five-content5">
+        <div class="all-list">
+          <div class="all-item">
+            <div class="all-title">
+              <img src="/imgs/free-title.png" alt="">
+              <span>免费品牌推广</span>
+            </div>
+            <div class="all-content">0”计划品牌推广服务，为企业免费量身定制推广方案。</div>
+          </div>
+          <div class="all-item">
+            <div class="all-title">
+              <img src="/imgs/free-title.png" alt="">
+              <span>免费商标展位</span>
+            </div>
+            <div class="all-content">专业商标交易网站，为闲置商标提供免费展位。</div>
+          </div>
+          <div class="all-item">
+            <div class="all-title">
+              <img src="/imgs/free-title.png" alt="">
+              <span>免费商标查询</span>
+            </div>
+            <div class="all-content">官方数据同步更新，随时监测商标状态</div>
+          </div>
+          <div class="all-item">
+            <div class="all-title">
+              <img src="/imgs/free-title.png" alt="">
+              <span>免费建立商标档案</span>
+            </div>
+            <div class="all-content">为您的商标提供完善的信息备份，终身整合式管理</div>
+          </div>
+          <div class="all-item">
+            <div class="all-title">
+              <img src="/imgs/free-title.png" alt="">
+              <span>免费享受终身售后服务</span>
+            </div>
+            <div class="all-content">一次办理，终身享受商标保护售后服务</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 底部悬浮框 -->
+    <section class="fpc-stick">
+      <div class="fpc-show-flag">
+        <div class="stick-wrap f-cc">
+          <img src="/imgs/stick-man.png" class="s-man" alt="">
+          <div class="stick-form">
+            <div class="stick-sub f-cc">
+              <span class="s-sub-1">没有您心仪的商标？</span>
+              <span class="s-sub-2">省心只需1步 好标尽在掌握！</span>
+            </div>
+            <div class="s-form f-cc">
+              <div class="select-wrap">
+                <select>
+                  <option value="">请选择商标所属行业</option>
+                  <option value="互联网、软件">互联网、软件</option>
+                  <option value="电子产品">电子产品</option>
+                  <option value="器械设备制造">器械设备制造</option>
+                  <option value="服装">服装</option>
+                  <option value="食品餐饮">食品餐饮</option>
+                  <option value="箱包">箱包</option>
+                  <option value="家居、建材">家居、建材</option>
+                  <option value="日化、洗护">日化、洗护</option>
+                  <option value="教育">教育</option>
+                  <option value="其他行业">其他行业</option>
+                </select>
+                <img src="/imgs/ai-arrow-down.png" alt="">
+              </div>
+              <input class="search-input" placeholder="请输入商标名称" type="text">
+              <button class="base-button dialog-btn" data-transphone="true" data-title="登录" data-submit="登录"
+                data-show="[1,1]">极速推荐</button>
+            </div>
+          </div>
+          <img src="/imgs/stick-close.png" class="s-close" alt="">
+        </div>
+      </div>
+      <img src="/imgs/stick-mini.png" class="stick-mini" alt="">
+    </section>
+    <!-- 弹框 -->
+    <div class="fpc-mask">
+      <div class="base-dialog form-dialog">
+        <div class="close">
+          <img class="dialog-close" src="/imgs/close.png" alt="">
+        </div>
+        <div class="title dialog-title">
+          <span class="slogan">商标注册查询</span><br>
+        </div>
+        <form id="dialog-form">
+          <!-- 手机号码 -->
+          <div class="form-item dialog-item" data-index="0">
+            <span class="name"><img src="./imgs/star.png" class="must-img"></span>
+            <div class="select-wrap required">
+              <input maxlength="11" class="base-input dialog-phone-value" placeholder="请输入您的手机号码" type="text">
+              <div class="dialog-error base-red dialog-phone-warn">请输入正确的手机号码</div>
+            </div>
+          </div>
+          <!-- 短信验证码 -->
+          <div class="form-item dialog-item" data-index="1">
+            <span class="name"><img src="./imgs/star.png" class="must-img"></span>
+            <div class="select-wrap send-code f-cc required">
+              <input maxlength="11" class="base-input code-input dialog-code-value" placeholder="请输入验证码" type="text">
+              <div class="code-btn">获取验证码</div>
+              <div class="dialog-error base-red dialog-code-warn">请输入正确验证码</div>
+            </div>
+          </div>
+        </form>
+        <div class="btn-wrap">
+          <button class="base-button btn-mystyle dialog-submit">提交查询</button>
+        </div>
+        <div class="privacy f-cc">
+          <div class="explain">登录即表示您已同意<a class="book">《中细软服务协议》</a></div>
+        </div>
+      </div>
+      <!-- 提交成功 -->
+      <div class="base-dialog success-dialog">
+        <div class="close">
+          <img class="dialog-close success-close" src="./imgs/close.png" alt="">
+        </div>
+        <div class="title success-title">
+          <span class="success">
+            <img src="./imgs/success.png" alt="">
+            <span>提交成功</span>
+          </span><br>
+          <span class="pub-title">您的咨询我们已收到，稍后会有专业顾问与您联系。</span>
+        </div>
+      </div>
+    </div>
+  </main>
   <script type="module" src="/src/main.ts"></script>
+  <script src="/jquery1.7.2.min.js"></script>
+  <script src="./src/assets/fpcHandle.js"></script>
 </body>
 
 </html>
