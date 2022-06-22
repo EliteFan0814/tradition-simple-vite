@@ -153,6 +153,8 @@ function fpcResetForm() {
   $('.page-logo-value').val('')
   $('.page-phone-value').val('')
   $('.page-name-value').val('')
+  $('.stick-select-value').val('')
+  $('.stick-logo-value').val('')
   $('.dialog-phone-value').val('')
   $('.dialog-code-value').val('')
   $('.dialog-phone-warn').hide()
@@ -169,7 +171,7 @@ function closeAllDialog() {
   $('.base-dialog').hide()
   $('.success-dialog').hide()
 }
-// 提交成功
+// 展示提交成功弹框
 function showSuccess() {
   $('.fpc-mask').show()
   $('.form-dialog').hide()
@@ -183,24 +185,19 @@ function watchDialogSubmit() {
       $('.dialog-phone-warn').show()
       return false
     }
-    // 通过验证
+    // 手机号通过验证
     $('.dialog-phone-warn').hide()
     // 验证是否填写短信验证码
     if (!$('.dialog-code-value').val()) {
       $('.dialog-code-warn').show()
       return false
     }
-    // 通过验证
+    // 短信验证码通过验证
     $('.dialog-code-warn').hide()
-    // 验证是否勾选协议
-    // if ($('.dialog-yes').css('display') === 'none') {
-    //   $('.dialog-pop').show()
-    //   return false
-    // }
     // 通过验证
     // $('.dialog-pop').hide()
     // 在下面进行提交操作 fpc todo
-    // 提交成功
+    // 展示提交成功
     if (isShowSuccess) {
       showSuccess()
     } else {
