@@ -263,9 +263,9 @@
           font-size: 20px;
           line-height: 56px;
           letter-spacing: 0px;
-          color: #ffaf00;
+          color: #41c3ff;
           .five-o {
-            color: #41c3ff;
+            color: #ffaf00;
           }
           > img {
             width: 28px;
@@ -350,7 +350,7 @@
       }
     }
     .five-content3 {
-      width: 938px;
+      width: 957px;
       align-items: flex-start;
       justify-content: space-between;
       padding-bottom: 150px;
@@ -394,7 +394,9 @@
         background-image: url(/imgs/flow1.png);
       }
       .flow-item2 {
-        background-image: url(/imgs/flow2.png);
+        padding-right: 13px;
+        width: 211px;
+        background-image: url(/imgs/flow21.png);
       }
     }
     .five-content4 {
@@ -518,11 +520,15 @@
               }
             }
             .search-input {
+              font-size: 12px;
               margin-right: 10px;
               border: none;
               width: 220px;
               height: 40px;
               border-radius: 0;
+              &::placeholder {
+                font-size: 12px;
+              }
             }
             .base-button {
               width: 114px;

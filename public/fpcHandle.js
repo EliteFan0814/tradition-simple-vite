@@ -34,12 +34,14 @@ function watchScroll() {
     }
   })
 }
+// 监听底部悬浮框关闭按钮
 function watchCloseStick() {
   $('.s-close').on('click', function () {
     $('.stick-wrap').animate({ right: '100%' })
     $('.stick-mini').animate({ left: '0px' })
   })
 }
+// 监听底部迷你悬浮框按钮
 function watchStickMini() {
   $('.stick-mini').on('click', function () {
     $('.stick-mini').animate({ left: '-84px' })
@@ -95,10 +97,9 @@ function watchDialogBtnClick() {
     // 获取 是否提取电话
     var dialogTransPhone = $(this).data('transphone') || false
     if (dialogTransPhone) {
-      $('.dialog-phone-value').val($('.page-phone-value').val() || '')
+      var phoneflagStr = '.' + $(this).data('phoneflag')
+      $('.dialog-phone-value').val($(phoneflagStr).val() || '')
     }
-    // $('.dialog-trademark-value').val($('.index-trademark-value').val() || '')
-    // isShowSuccess = $(this).data('show-success') === false ? false : true
     $('.fpc-mask').show()
     $('.form-dialog').show()
     $('.dialog-title').text(dialogTitle)
@@ -206,6 +207,7 @@ function watchDialogSubmit() {
     }
   })
 }
+// 初始化监听
 function pageInit() {
   watchTabs()
   newSwiperSearch()
@@ -218,6 +220,7 @@ function pageInit() {
   watchDialogBtnClick()
   watchDialogSubmit()
 }
+// 执行监听
 $(function () {
   pageInit()
 })
